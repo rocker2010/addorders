@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<!-- dataTables -->
+		<script src="css/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="css/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="css/dataTables.responsive.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="css/jquery.easytabs.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <link rel="stylesheet" type="text/css" href="css/dataTables.min.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.dataTables.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css" />
+		<!-- dataTables end-->
+		<link rel="stylesheet" type="text/css" href="css/css/simple-line-icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>订单支付</title>
+	</head>
+	<body>
+		<div class="page"  id="tab-container">
+			<ul class="tab">
+			  <li><a class="tab1" href="#tabcontent1">新门店订单</a></li>
+			  <li><a class="tab2" href="#tabcontent2">门店订单记录</a></li>
+			</ul>
+			<div id="tabcontent1">
+			<div class="pageTools">
+				<div class="formSuc">
+					<label for="" class="grey">专卖店*</label>
+					<select name="" id="mysel">
+						<option value="1">请选择</option>
+						<option value="">0124215</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+						<option value="">0124216</option>
+					</select>
+					<span>（门店的名字）</span>
+				</div>
+				<b class="feng"></b>
+				<div class="formSuc">
+					<label for="" class="grey">购买人*</label>
+					<input type="text" class="short" placeholder="请输入会员编号" id="mynum">
+					<span id="name" class="userName"><i class="icon-check"></i>Jecken
+						Li</span>
+				</div>
+				<b class="feng"></b>
+				<input type="button" name="" id="nextBtn" value="下一步" class="btnMd" />
+			</div>
+			<!-- <div class="pageContent p30" id="weifu" style="display: none;"> 
+				<div class="orderItem">
+					<img src="css/error.png" class="check">
+					<ul>
+						<li>
+							<h4>您的首单尚未付款，请先到专卖店完成首单付款，才可以创建其他订单！</h4>
+						</li>
+						<li>订单号：25093949805</li>
+						<li><span class="textGrey">应付总额：¥&nbsp;<b>298.00</b>&nbsp;元</span></li>
+					</ul>
+				</div>
+				<p style="text-align: center;">
+					<input type="button" name="" value="查看订单详情" class="verifyCodeBtn short default"/>
+					</p>
+			</div> -->
+			<div class="pageContent" id="buyList">
+				<div class="maskIn">
+					<div class="info"><img src="css/hand_480.11064278188px_1195537_easyicon.net.png" style="width: 0.6rem;">
+						<p>请先选择专卖店和购买人</p>
+					</div>
+				</div>
+				<!-- <div class="pageHeader">
+					<span class="fromL"><i class="icon-user f22 grey"></i> Jecken Li</span>
+					<div class="fromR"><input type="text" class="md" placeholder="请输入会员编号"><input type="button" name="" id="" value="查询" /></div>
+				</div> -->
+				<div class="table">
+					<div class="tableTit">启动包专区</div>
+					<ul class="payStyleList">
+						<li title="Tianshi Spirulina Capsules(ENG)">
+							<h3>Tianshi Spirulina Capsules(ENG)<b>#SP0100280</b></h3>
+							<p><span>Price：</span>$58.00</p>
+							<p><span>PV/BV：</span>45.00/12.21</p>
+						</li>
+						<li title="Tianshi Spirulina Capsules(ENG)">
+							<h3>Tianshi Spirulina Capsules(ENG)<b>#SP0100280</b></h3>
+							<p><span>Price：</span>$58.00</p>
+							<p><span>PV/BV：</span>45.00/12.21</p>
+						</li>
+						<li title="Tianshi Spirulina Capsules(ENG)">
+							<h3>Tianshi Spirulina Capsules(ENG)<b>#SP0100280</b></h3>
+							<p><span>Price：</span>$58.00</p>
+							<p><span>PV/BV：</span>45.00/12.21</p>
+						</li>
+						<li title="Tianshi Spirulina Capsules(ENG)">
+							<h3>Tianshi Spirulina Capsules(ENG)<b>#SP0100280</b></h3>
+							<p><span>Price：</span>$58.00</p>
+							<p><span>PV/BV：</span>45.00/12.21</p>
+						</li>
+						<li title="Spirulina Tianshi Spirulina Capsules(ENG)">
+							<h3>Tianshi Spirulina Capsules(ENG)<b>#SP0100280</b></h3>
+							<p><span>Price：</span>$58.00</p>
+							<p><span>PV/BV：</span>45.00/12.21</p>
+						</li>
+						<li title="Tianshi Spirulina Capsules(ENG) Spirulina">
+							<h3>Tianshi Spirulina Capsules(ENG)<b>#SP0100280</b></h3>
+							<p><span>Price：</span>$58.00</p>
+							<p><span>PV/BV：</span>45.00/12.21</p>
+						</li>
+					</ul>
+				</div>
+				<div class="table tdCenter">
+					<table class="display nowrap" style="width:100%" id="example">
+						<thead>
+							<tr>
+								<th> 商品 </th>
+								<th> 价格/折后价 </th>
+								<th> PV/BV </th>
+								<th> 数量 </th>
+								<th> 小计 </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tdl">Tianshi Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+								<td><span class="delPrice">$518.00</span> / $58.00</td>
+								<td>45.00 / 12.21</td>
+								<td><input type="text" class="num min" id="proNum"></td>
+								<td>$158.00</td>
+							</tr>
+							<tr>
+								<td class="tdl">Tianshi Spirulina(ENG) <b>#SP0100280</b></td>
+								<td><span class="delPrice">$128.00</span> / $58.00</td>
+								<td>45.00 / 12.21</td>
+								<td><input type="text" class="num min"></td>
+								<td>$528.00</td>
+							</tr>
+							<tr>
+								<td class="tdl">Tiens Tianshi Spirulina Capsules(ENG) Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+								<td><span class="delPrice">$350.00</span> / $58.00</td>
+								<td>45.00 / 12.21</td>
+								<td><input type="text" class="num min"></td>
+								<td>$518.00</td>
+							</tr>
+							<tr>
+								<td class="tdl">Tianshi Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+								<td><span class="delPrice">$251.00</span> / $58.00</td>
+								<td>45.00 / 12.21</td>
+								<td><input type="text" class="num min"></td>
+								<td>$158.00</td>
+							</tr>
+							<tr>
+								<td class="tdl">Tianshi Spirulina(ENG) <b>#SP0100280</b></td>
+								<td><span class="delPrice">$458.00</span> / $58.00</td>
+								<td>45.00 / 12.21</td>
+								<td><input type="text" class="num min"></td>
+								<td>$528.00</td>
+							</tr>
+
+							<tr>
+								<td class="tdl">Tianshi Spirulina(ENG) <b>#SP0100280</b></td>
+								<td><span class="delPrice">$158.00</span> / $58.00</td>
+								<td>45.00 / 12.21</td>
+								<td><input type="text" class="num min"></td>
+								<td>$528.00</td>
+							</tr>
+
+							<tr>
+								<td class="tdl">Tianshi Spirulina(ENG) <b>#SP0100280</b></td>
+								<td><span class="delPrice">$658.00</span> / $58.00</td>
+								<td>45.00 / 12.21</td>
+								<td><input type="text" class="num min"></td>
+								<td>$528.00</td>
+							</tr>
+							<!-- 			<tr>
+								<td>Tiens Tianshi Spirulina Capsules(ENG) Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+								<td>$58.00</td>
+								<td>$58.00</td>
+								<td>45.00/12.21</td>
+								<td><input type="text" class="num min"></td>
+								<td>$518.00</td>
+							</tr>
+							<tr>
+								<td>Tianshi Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+								<td>$58.00</td>
+								<td>$58.00</td>
+								<td>45.00/12.21</td>
+								<td><input type="text" class="num min"></td>
+								<td>$158.00</td>
+							</tr>
+							<tr>
+								<td>Tianshi Spirulina(ENG) <b>#SP0100280</b></td>
+								<td>$58.00</td>
+								<td>$58.00</td>
+								<td>45.00/12.21</td>
+								<td><input type="text" class="num min"></td>
+								<td>$528.00</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+			<div id="tabcontent2">
+				<div class="pageTools">
+					<div class="formSuc">
+						<label for="" class="grey">订单业绩期</label>
+						<select name="" id="mysel">
+							<option value="1">请选择</option>
+							<option value="">0124215</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+							<option value="">0124216</option>
+						</select>
+					</div>
+					<b class="feng"></b>
+					<div class="formSuc">
+						<input type="text" class="short" placeholder="请输入订单编号" id="mynum">
+						<input type="button" name="" id="nextBtn" value="搜索" class="btnMd">
+					</div>
+					
+					
+				</div>
+				<div class="pageContent">
+					<div class="table tdCenter">
+						<table class="display nowrap" style="width:100%" id="example2">
+							<thead>
+								<tr>
+									<th> 订单编号 </th>
+									<th> 订单状态 </th>
+									<th> 业绩期 </th>
+									<th> 实付款 </th>
+									<th> 总PV/BV </th>
+									<th> 订单日期 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+				
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+				
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+												
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+												
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+								<tr>
+									<td><a href="show_view.html" target="_blank">S01160180100077</a></td>
+									<td>未付款 </td>
+									<td>201909</td>
+									<td>$50.00</td>
+									<td>170.00/270.030</td>
+									<td>2019/9/11 10:31:10</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="count" style="display: none;">
+			<div class="inner">
+				<ul>
+					<li><span class="left">总计（原价）</span><span class="right">$58.00</span></li>
+					<li><span class="left">总PV/BV</span><span class="right">157.00/357.00</span></li>
+				</ul>
+				<ul>
+					<li><span class="left">级别折扣额</span><span class="right">-$8.00</span></li>
+					<li><span class="left">拓展折扣额</span><span class="right">-$4.00</span></li>
+				</ul>
+				<ul>
+					<li><span class="left">实付款</span><span class="right b price">$58.00</span></li>
+				</ul>
+				<button style="top: 50%; position: absolute; right: 0.15rem; transform: translateY(-50%);" id="submitOrder" class="short">提交订单</button>
+			</div>
+		</div>
+		<div class="errorInfo">会员不存在，请重新输入 <a href="javascript:" class="close"><i class="icon-close"></i></a></div>
+		<div class="mask" id="msgSuccess">
+			<div class="popWindow">
+				<div style="padding: 0.2rem;">
+					<p style="border-bottom: 1px #e4e4e4 solid;padding-bottom:  0.15rem; "><strong>确认提交订单吗？</strong></p>
+					<p style=" font-size: 0.14rem;  color: #757575; ">
+						<b style=" font-size: 0.26rem; display: block; color: #ff6700;">$528.00</b>
+						需支付
+					</p>
+					<input type="button" name="" value="取消" class="verifyCodeBtn short default" onclick="hidemask()">
+					<input type="button" name="" value="确认" class="verifyCodeBtn short" onclick="window.location.href='show_info.html'">
+				</div>
+			</div>
+		</div>
+		<div class="mask" id="msgInfo">
+			<div class="popWindow">
+				<h4>提交订单</h4>
+				<div style="padding: 20px;">
+					<img src="css/error.png" class="mesImg">
+					<p>首单必须购买启动包，请至少选择一个启动包</p>
+					<input type="button" name="" value="确认" class="verifyCodeBtn short" onclick="hidemask()" />
+				</div>
+			</div>
+		</div>
+		<div class="mask" id="weifu">
+			<div class="popWindow">
+				<div style="padding: 0.2rem;">
+					<img src="css/error.png" class="mesImg">
+					<p style=" font-weight: bold; text-align: left; ">您的首单尚未付款，请先到专卖店完成首单付款，才可以创建其他订单！</p>
+					<p style="text-align: left;margin-bottom: 0;font-size: 0.16rem;">订单号：25093949805</p>
+					<p style="text-align: left;font-size: 0.16rem;margin-bottom:  0.2rem;border-bottom: 1px #ccc solid;padding-bottom: 0.15rem;"><span
+						 class="textGrey">应付总额：¥&nbsp;<b>298.00</b>&nbsp;元</span></p>
+					<input type="button" name="" value="查看订单详情" class="verifyCodeBtn short default" onclick="hidemask()">
+				</div>
+				<a href="javascript:" class="closeBtn" onclick="hidemask()"><i class="icon-plus"></i>
+			</div>
+		</div>
+		<script src="css/js.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#tab-container').easytabs();
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<!-- dataTables -->
+		<script src="css/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="css/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="css/dataTables.responsive.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="css/jquery.easytabs.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <link rel="stylesheet" type="text/css" href="css/dataTables.min.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.dataTables.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css" />
+		<!-- dataTables end-->
+		<link rel="stylesheet" type="text/css" href="css/css/simple-line-icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>订单支付</title>
+	</head>
+	<body>
+		<div class="page" id="tab-container">
+			<ul class="tab">
+				<li class="active"><a class="tab2 active" href="#tabcontent2">订单详情</a></li>
+			</ul>
+			<div>
+				<div class="pageContent">
+					<div class="pageHeader">
+						<span class="fromL"><span class="f14 grey">订单号：</span>#007ET001001201909250000054 <b class="feng"></b><span class="grey f14">订单状态：</span>未付款</span>
+						<div class="fromR"><a href="JavaScript:" class="qx" id="cancleOrder">取消订单</a></div>
+					</div>
+					<div class="pageL">
+						<dl class="orderInfo nob nomb">
+							<dt>经销商信息</dt>
+							<dd><span>经销商编号：</span> 87654321 </dd>
+							<dd><span>经销商姓名：</span> Distributor Name </dd>
+						</dl>
+					</div>
+					<div class="pageR">
+						<div class="orderPay">
+							<p>实付款： <span class="price">$518 </span></p>
+							<p>总PV/BV：<span class="pvbv">5124.00/512.01</span></p>
+						</div>
+					</div>
+					<dl class="orderInfo">
+						<dt>订单信息</dt>
+						<dd><span>业绩期：</span> 201909</dd>
+						<dd><span>专卖店：</span> ET001001 埃塞俄比亚001专卖店</dd>
+						<dd><span>订单类型：</span> 普通</dd>
+						<dd><span>订单来源：</span> APP</dd>
+						<dd><span>创建时间：</span> 2019/9/11 10:31:10</dd>
+						<dd><span>创建人：</span> 88887777</dd>
+						<dd><span>付款时间：</span>无</dd>
+						<dd><span>付款审核人：</span>无</dd>
+					</dl>
+					<div class="table tdCenter">
+						<div class="tableTit">商品信息</div>
+						<table class="display nowrap npt" style="width:100%" id="example">
+							<thead>
+								<tr>
+									<th> 商品库存单位（SKU） </th>
+									<th> 商品名称 </th>
+									<th> 价格 </th>
+									<th> PV/BV </th>
+									<th> 数量 </th>
+									<th> 小计 </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>DM01W0038</td>
+									<td class="tdl">Tianshi Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+									<td> $58.00</td>
+									<td>45.00 / 12.21</td>
+									<td>3</td>
+									<td>$158.00</td>
+								</tr>
+								<tr>
+									<td>DM01W0038</td>
+									<td class="tdl">Tianshi Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+									<td> $58.00</td>
+									<td>45.00 / 12.21</td>
+									<td>3</td>
+									<td>$158.00</td>
+								</tr>
+								<tr>
+									<td>DM01W0038</td>
+									<td class="tdl">Tianshi Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+									<td> $58.00</td>
+									<td>45.00 / 12.21</td>
+									<td>3</td>
+									<td>$158.00</td>
+								</tr>
+								<tr>
+									<td>DM01W0038</td>
+									<td class="tdl">Tianshi Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+									<td> $58.00</td>
+									<td>45.00 / 12.21</td>
+									<td>3</td>
+									<td>$158.00</td>
+								</tr>
+								<tr>
+									<td>DM01W0038</td>
+									<td class="tdl">Tianshi Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+									<td> $58.00</td>
+									<td>45.00 / 12.21</td>
+									<td>3</td>
+									<td>$158.00</td>
+								</tr>
+
+								<tr>
+									<td>DM01W0038</td>
+									<td class="tdl">Tianshi Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+									<td> $58.00</td>
+									<td>45.00 / 12.21</td>
+									<td>3</td>
+									<td>$158.00</td>
+								</tr>
+
+								<tr>
+									<td>DM01W0038</td>
+									<td class="tdl">Tianshi Spirulina Capsules(ENG) <b>#SP0100280</b></td>
+									<td> $58.00</td>
+									<td>45.00 / 12.21</td>
+									<td>3</td>
+									<td>$158.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="count countIn" style="  ">
+						<ul>
+							<li><span class="left">总计（原价）</span><span class="right">$58.00</span></li>
+							<li><span class="left">总PV/BV</span><span class="right pvbv">157.00/357.00</span></li>
+							<li><span class="left">级别折扣额</span><span class="right ">-$8.00</span></li>
+							<li><span class="left">拓展折扣额</span><span class="right ">-$4.00</span></li>
+							<li><span class="left">实付款</span><span class="right b price">$58.00</span></li>
+							<li class="r"><input type="button" name="" value="去付款" class="verifyCodeBtn md"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mask" id="msgSuccess">
+			<div class="popWindow">
+				<div style="padding: 0.2rem;">
+					<p style="padding: 0.4rem 0.15rem; "><strong>确认取消订单吗？</strong></p>
+					<input type="button" name="" value="取消" class="verifyCodeBtn short default" onclick="hidemask()">
+					<input type="button" name="" value="确认" class="verifyCodeBtn short" onclick="canncel()">
+				</div>
+			</div>
+		</div>
+		<script src="css/js.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
